@@ -1,6 +1,6 @@
 # SW_riemann_problem
 
-![Dam Break x/t](figs/LSRWdambreak.png)
+![Dam Break x/t](figs/LWRSdambreak.png)
 
 ## Exact solutions of the Riemann problem for the shallow water equations: rarefaction waves, shocks, and contact discontinuities
 
