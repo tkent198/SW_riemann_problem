@@ -133,4 +133,26 @@ The all-rarefaction Riemann solution (LW-RW): evolution of depth h and velocity 
 
 Run ```husubplots.m``` with the specified initial data.
 
-#### Figure 5
+#### Figure 6
+
+Schematic solution in the (x,t)-plane of the dam-break problem for the 1D *symmetric* SWEs -- Eqs. (46)-(48) in Kent (2013). The complete Riemann solution consists of a left rarefaction wave, contact discontinuity, and right shock wave. Note that: h and u are continuous over the contact discontinuity, but v is discontinuous here and continuous over the rarefaction and shock waves.
+
+<p align="center">
+  <img src="figs/schemcontact.png" alt="Schematic: contact discontinuity dam break"/>
+</p>
+
+Run ```contactdisc.m```: default setting with given (arbitrary) wave speeds.
+
+#### Figure 7
+
+Similarity solutions for depth h and velocities u and v as a function of x/t for the dam-break Riemann problem with initial data: hl = 2; hr = 1; ul = ur = 0; vl = 1; vr = 2. The contact discontinuity in v is located at u*.
+
+<p align="center">
+  <img src="figs/LWRSdambreakcontact.png" alt="Similarity: contact discontinuity dam break"/>
+</p>
+
+Run the function ```symSWRPplot.m``` with the specified initial data:
+
+```
+symSWRPplot(2,1,0,0,1,2)
+```
