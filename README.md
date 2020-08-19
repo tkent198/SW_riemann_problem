@@ -15,10 +15,11 @@ The system is then extended to a one-dimensional symmetric system in which spati
 
 ### Solving the SW Riemann problem: in a nutshell
 A general strategy for solving the Riemann problem is as follows (after LeVeque, 2002, and detailed in Kent, 2013):
- * determine whether the 1-wave and 2-wave are shock or rarefaction waves;
- * determine the intermediate star state u between the two waves;
+ * determine whether the left-wave and right-wave are shock or rarefaction waves;
+ * determine the intermediate star state (h*,u*) between the two waves;
  * determine the location of shocks via shock speed and the head and tail of the rarefaction waves via the characteristic speeds;
  * determine the structure of the solution through any rarefaction wave.
+
 First consider an isolated wave separating two constant states and how these two states are connected. For shock waves, this connection is simply a step discontinuity, the location of which must be determined. For rarefaction waves, this connection is more complicated: the location of start and end of wave must be determined along with the curve connecting them.
 
 ### Output
@@ -59,30 +60,34 @@ File name                   |  Summary
 
 ## Generating the figures in Kent (2013)
 #### Figure 1
-Similarity solution x/t of the dam-break Riemann problem for the shallow water equations with initial data: hl = 2; hr = 1; ul = ur = 0. Between the left and right initial states emerges a constant star state h*; in this case hl > h* > hr corresponding to a `left rarefaction wave - right shock' (LW-RS) Riemann solution.
+Similarity solutions for depth h and velocity u as a function of x/t for the dam-break Riemann problem with initial data: hl = 2; hr = 1; ul = ur = 0. Between the left and right initial states emerges a constant star state (h*, u*); in this case hl > h* > hr corresponding to a `left rarefaction wave - right shock' (LW-RS) Riemann solution.
 
 <!-- ![Dam break similarity](figs/LWRSdambreak.png) -->
-
 <p align="center">
   <img src="figs/LWRSdambreak.png" alt="Dam break similarity"/>
 </p>
 
 Run ```swrpplots.m```: default setting with this initial data.
+
 ```
 % choose syms h
 hl=2; hr=1; ul=0; ur=0;
 ```
+
 This is an example of a mixed Riemann solution comprising a rarefaction wave and a shock wave. The structure inside the rarefaction wave (i.e., in this case the curve connecting hl and h*) is given by equation (39) in Kent (2013).
 
 *Exercise: Change hl, hr, ul, ur for different solutions. Find initial data that result in a LS-RW solution.*
 
 #### Figure 2
 Figure 2 illustrates the evolution of the depth h and fluid velocity u for the dam-break problem at certain times t with initial data hl = 2, hr = 1, and ul = ur = 0. The fluid  flows from left to right (i.e. from the region of higher depth to the region of lower depth) in a body that expands from the dam location at x = 0. On the left hand side of this body, the fluid moves away from the deeper stationary fluid through a rarefaction wave. On the right, fluid with intermediate depth h* and velocity u* collides with the stationary fluid at a lower depth, instantaneously accelerating it through a shock wave.
+
 <p align="center">
   <img src="figs/hfig.png" alt="Dam break h"/>
   <img src="figs/ufig.png" alt="Dam break u"/>
 </p>
+
 Run ```husubplots.m```: default setting with this initial data.
+
 ```
 % choose time-snaps
 tn = 0:0.5:1;
@@ -92,4 +97,5 @@ hr = 1;
 ul = 0;
 ur = 0;
 ```
+
 *Exercise: Change hl, hr, ul, ur for different solutions; plot at different times.=.*
