@@ -53,9 +53,10 @@ File name                   |  Summary
 #### Figure 1
 Similarity solution x/t of the dam-break Riemann problem for the shallow water equations with initial data: hl = 2; hr = 1; ul = ur = 0. Between the left and right initial states emerges a constant star state h*; in this case hl > h* > hr corresponding to a `left rarefaction wave - right shock' (LW-RS) Riemann solution.
 
+![Dam break similarity](figs/LWRSdambreak.png)
 
 <p align="center">
-![Dam break similarity](figs/LWRSdambreak.png)
+  <img src="figs/LWRSdambreak.png" alt="Dam break similarity"/>
 </p>
 
 Run ```swrpplots.m```: default setting with this initial data.
