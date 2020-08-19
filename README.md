@@ -51,6 +51,8 @@ The source code deposited here has been used to generate the figures in the atta
 ### Add Language, versions, etc.
 * MATLAB '9.4.0.813654 (R2018a)'
 
+**NOTE:** code written for personal use in 2013, revisited in 2020 for publishing here. Caveat: it's not how I would code today but it still works!
+
 ### Files overview
 
 File name                   |  Summary
