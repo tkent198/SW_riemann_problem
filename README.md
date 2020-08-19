@@ -1,9 +1,11 @@
 # SW_riemann_problem
 
 <p align="center">
+
 Fluid depth h(x,t)           |  Fluid velocity u(x,t)
 :-------------------------:|:-------------------------:
 ![Dam break: depth](figs/hfig.png)  |  ![Dam break: velocity](figs/ufig.png)
+
 </p>
 
 ## Exact solutions of the Riemann problem for the shallow water equations: rarefaction waves, shocks, and contact discontinuities
