@@ -1,5 +1,5 @@
 # SW_riemann_problem
-Fluid depth            |  Fluid velocity
+Fluid depth h(x,t)           |  Fluid velocity u(x,t)
 :-------------------------:|:-------------------------:
 ![Dam break: depth](figs/hfig.png)  |  ![Dam break: velocity](figs/ufig.png)
 
@@ -47,7 +47,7 @@ The source code deposited here has been used to generate the figures in the atta
 * LeVeque, R. J. (2002). *Finite volume methods for hyperbolic problems*. Cambridge university press.
 ----
 
-## Getting started
+## Code: getting started
 ### Add Language, versions, etc.
 * MATLAB '9.4.0.813654 (R2018a)'
 
