@@ -50,10 +50,13 @@ File name                   |  Summary
 
 
 ## Generating the figures in Kent (2013)
-### Figure 1
+#### Figure 1
 Similarity solution x/t of the dam-break Riemann problem for the shallow water equations with initial data: hl = 2; hr = 1; ul = ur = 0. Between the left and right initial states emerges a constant star state h*; in this case hl > h* > hr corresponding to a `left rarefaction wave - right shock' (LW-RS) Riemann solution.
 
+
+<p align="center">
 ![Dam break similarity](figs/LWRSdambreak.png)
+</p>
 
 Run ```swrpplots.m```: default setting with this initial data.
 ```
@@ -64,4 +67,4 @@ This is an example of a mixed Riemann solution comprising a rarefaction wave and
 
 *Exercise: Change hl, hr, ul, ur for different solutions. Find initial data that result in a LS-RW solution.*
 
-### Figure 2
+#### Figure 2
