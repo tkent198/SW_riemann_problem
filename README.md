@@ -10,7 +10,6 @@ Fluid depth            |  Fluid velocity
 ### Introduction
 This repository contains some MATLAB code and documentation on the Riemann problem for the one-dimensional shallow water equations (SWEs) with flat bottom topography. The SWEs are a nonlinear system of conservative hyperbolic partial differential equations (PDEs).
 Exact solutions of the Riemann problem for this system exist and comprise different combinations of shock waves and centred rarefaction waves. The classical problem considered is the so called dam-break problem, in which flow is initially at rest (zero velocity) with a step discontinuity in water depth h and evolves with a left rarefaction wave and right shock wave (see above figures; fig. 2 in Kent, 2013).
-
 The system is then extended to a one-dimensional symmetric system in which spatial variation in the y-direction is ignored at leading order. The inclusion of meridional velocity, which acts like a tracer, is manifest in the solutions as a contact discontinuity which separates the fluid into two regions of different meridional velocity.
 
 Solving the Riemann problem is an essential element of the implementation of the (Godunov)finite volume numerical scheme and other modern numerical upwind schemes (see, e.g., [this repository](https://github.com/tkent198/wellbalanced_SW_DGFEM)).
@@ -18,7 +17,7 @@ Solving the Riemann problem is an essential element of the implementation of the
 ### Solving the SW Riemann problem: in a nutshell
 A general strategy for solving the Riemann problem is as follows (after LeVeque, 2002, and detailed in Kent, 2013):
  * determine whether the left-wave and right-wave are shock or rarefaction waves;
- * determine the intermediate star state (h*,u*) between the two waves;
+ * determine the intermediate star state (h*, u*) between the two waves;
  * determine the location of shocks via shock speed and the head and tail of the rarefaction waves via the characteristic speeds;
  * determine the structure of the solution through any rarefaction wave.
 
@@ -112,3 +111,13 @@ Schematic of the four admissible solutions of the Riemann problem: (a) left and 
 </p>
 
 Run ```fouradmissiblesols.m```: default setting with given (arbitrary) wave speeds.
+
+#### Figure 4
+The all-shock Riemann solution: evolution of  depth h and velocity u at certain times t with initial data hl = 1, hr = 1, ul = 2, and ur = 0. This set-up corresponds to a moving fluid crashing into a static fluid of equal depth. A shock wave moves in both directions at different speeds (slower to the left, faster to the right), resulting in a wedge of fluid of increased depth expanding asymmetrically about x = 0 with constant intermediate velocity u*.
+
+<p align="center">
+  <img src="figs/hLSRS.png" alt="LSRS h"/>
+  <img src="figs/uLSRS.png" alt="LSRS u"/>
+</p>
+
+Run ```husubplots.m``` with the specified initial data.
