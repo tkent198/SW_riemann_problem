@@ -113,7 +113,7 @@ Schematic of the four admissible solutions of the Riemann problem: (a) left and 
 Run ```fouradmissiblesols.m```: default setting with given (arbitrary) wave speeds.
 
 #### Figure 4
-The all-shock Riemann solution: evolution of  depth h and velocity u at certain times t with initial data hl = 1, hr = 1, ul = 2, and ur = 0. This set-up corresponds to a moving fluid crashing into a static fluid of equal depth. A shock wave moves in both directions at different speeds (slower to the left, faster to the right), resulting in a wedge of fluid of increased depth expanding asymmetrically about x = 0 with constant intermediate velocity u*.
+The all-shock Riemann solution (LS-RS): evolution of depth h and velocity u at certain times t with initial data hl = 1, hr = 1, ul = 2, and ur = 0. This set-up corresponds to a moving fluid crashing into a static fluid of constant depth. A shock wave moves in both directions at different speeds (slower to the left, faster to the right), resulting in a wedge of fluid of increased depth expanding asymmetrically about x = 0 with constant intermediate velocity u*.
 
 <p align="center">
   <img src="figs/hLSRS.png" alt="LSRS h"/>
@@ -121,3 +121,16 @@ The all-shock Riemann solution: evolution of  depth h and velocity u at certain 
 </p>
 
 Run ```husubplots.m``` with the specified initial data.
+
+#### Figure 5
+
+The all-rarefaction Riemann solution (LW-RW): evolution of depth h and velocity u at certain times t with initial data hl = 1, hr = 1, ul = 0, and ur = 2. The solutions consist of two rarefaction waves moving away from each other at different speeds. As the fluid in x > 0 moves to the right, a depression in the fluid depth forms about x = 0 and expands horizontally. This depression is fronted by two rarefaction waves and travels at constant intermediate velocity u* = 1. The structure of the expansion fans is given by Eqs. (39) and (40) in Kent (2013) for the given times t > 0.
+
+<p align="center">
+  <img src="figs/hLWRW.png" alt="LWRW h"/>
+  <img src="figs/uLWRW.png" alt="LWRW u"/>
+</p>
+
+Run ```husubplots.m``` with the specified initial data.
+
+#### Figure 5
