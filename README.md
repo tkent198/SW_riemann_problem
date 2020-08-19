@@ -14,7 +14,7 @@ The system is then extended to a one-dimensional symmetric system in which spati
 
 Solving the Riemann problem is an essential element of the implementation of the (Godunov)finite volume numerical scheme and other modern numerical upwind schemes (see, e.g., [this repository](https://github.com/tkent198/wellbalanced_SW_DGFEM)).
 
-The source code has been used to generate the figures in the attached [report](SWRiem.pdf).
+The source code has been used to generate the figures in the attached [report](SWRiem.pdf) (Kent, 2013). The solutions have been derived in detail in Kent (2013), supported by a number of sources -- see LeVeque (2002), particularly chapter 13, for a thorough introduction to and discussion of the problem.
 
 <!-- ---
 ## Contents
@@ -33,9 +33,8 @@ The source code has been used to generate the figures in the attached [report](S
 
 
 ### References
-* Add Leveque.
-
-
+* Kent, T. (2013): *Exact solution of the Riemann problem for the shallow water equations*. Tech. report. [PDF.](SWRiem.pdf)
+* LeVeque, R. J. (2002). *Finite volume methods for hyperbolic problems*. Cambridge university press.
 ----
 
 ## Getting started
@@ -48,3 +47,9 @@ File name                   |  Summary
 :--------------------------:|:--------------------------:
 ```... .m```       |  ...
 ```... .m```    | ...
+
+
+## Generating the figures in Kent (2013)
+### Figure 1
+
+![Dam break similarity](figs/LWRSdambreak.png)
